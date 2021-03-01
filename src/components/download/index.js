@@ -35,8 +35,8 @@ export default function DownloadButton(props) {
   var stylecss =
 `/*
 * Theme Name: ${props.themeNameProp}
-* Author: Lorelei M.
-* Description: A wordpress theme starter
+* Author: ${props.authorProp}
+* Description: ${props.descriptionProp}
 * Version 0.1.0
 */
 
@@ -74,7 +74,6 @@ if ( get_query_var('pagename') ) {
 <?php get_footer(); ?>`
 
   function generateZip() {
-    console.log(props.themeNameProp)
     var zip = new JSZip();
 
     /*MAIN DIRECTORY*/
