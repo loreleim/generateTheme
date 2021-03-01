@@ -1,10 +1,10 @@
 import React from 'react';
 import style from "./index.module.scss";
+import Database from "../../database";
 
 export default function DownloadButton(props) {
 
   function generateZip() {
-    console.log("test")
     console.log(props.themeNameProp)
   }
 
