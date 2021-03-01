@@ -11,12 +11,8 @@
 
 This web app takes advantage of the following React.js features
 
-- [ ] Conditional SCSS Rendering
-- [ ] Multidimensional Array Rendering
-- [ ] Rendering components
-- [ ] isSelected() counting algorithm
-- [ ] useRefs for scroll on click
-- [ ] combining objects with spread ... operators
+- [ ] onChange listeners
+- [ ] props
 
 ## Installing for Development
 
