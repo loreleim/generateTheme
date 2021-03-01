@@ -14,6 +14,36 @@ a {
 }
 
 
+p {
+  color: $black;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
 
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
