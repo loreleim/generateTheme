@@ -58,7 +58,20 @@ export default function DownloadButton(props) {
 </body>
 </html>
 `
+  var defaultPage = 
+`<?php /* Template Name: Example Page */ ?>
+<?php get_header(); ?>
 
+
+Is there a pagename?
+<?php 
+if ( get_query_var('pagename') ) {
+    // If so echo the value
+    echo get_query_var('pagename');
+}
+?>
+
+<?php get_footer(); ?>`
 
   function generateZip() {
     console.log(props.themeNameProp)
