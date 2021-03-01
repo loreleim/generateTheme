@@ -90,11 +90,14 @@ if ( get_query_var('pagename') ) {
     //header.php
     zip.file("header.php", headerphp)
 
-    /*FOLDER ONE*/
+    /*LIBRARY FOLDER*/
 
-    //library
+    //library dir
     var folder1 = zip.folder("library");
-    folder1.file("Hello.txt", "Hello World\n");
+
+    //blocks dir
+    var blocksFolder = folder1.folder("blocks");
+    blocksFolder.file("Hello.txt", "Hello World\n");
 
     //blocks - gutenberg block templates
 
