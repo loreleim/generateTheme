@@ -101,9 +101,13 @@ if ( get_query_var('pagename') ) {
 
     //blocks - gutenberg block templates
 
-    //pages - where you put ACF templates
+    /*PAGES FOLDER*/
+
+    //pages dir
     var folder2 = zip.folder("pages");
-    folder2.file("Hello.txt", "Hello World\n");
+
+    //page-default.php
+    folder2.file("page-default.php", defaultPage);
 
     zip.generateAsync({type:"blob"})
     .then((content) => {
