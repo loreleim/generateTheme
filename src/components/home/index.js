@@ -7,7 +7,7 @@ export default function Home() {
   }
 
   return (
-    <div className={style.zippysContainer}>
+    <div className={style.heroContainer}>
       <h1>Home</h1>
       <button onClick={()=> generateZip()}>Generate Theme</button>
     </div>
