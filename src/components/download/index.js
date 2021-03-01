@@ -5,6 +5,23 @@ import { saveAs } from 'file-saver';
 
 export default function DownloadButton(props) {
 
+  var headerphp =
+`<!DOCTYPE html>
+<html <?php language_attributes(); ?>
+
+<head>
+    <?php /* Meta Tags */ ?>    
+    <?php include(locate_template('library/components/ol-metadata/ol-metadata.php')); ?>
+   
+    <?php /* Header Output Hook */ ?> 
+    <?php wp_head(); ?>
+</head>
+
+<?php /* Opening Body Tag */ ?>
+<body <?php body_class(); ?>
+`
+
+
   var indexphp =
 `<?php get_header(); ?>
 	
@@ -16,7 +33,7 @@ export default function DownloadButton(props) {
   
 <?php get_footer(); ?>`
 
-var stylecss =
+  var stylecss =
 `/*
 * Theme Name: ${props.themeNameProp}
 * Author: Lorelei M.
@@ -30,6 +47,20 @@ var stylecss =
   box-sizing: border-box;
 }`
 
+  var footerphp =
+`<?php?>
+
+<?php /* Scripts */ ?>
+<div>
+	<?php /* WP Footer Scripts */ ?>
+	<?php wp_footer(); ?>
+</div>
+
+</body>
+</html>
+`
+
+
   function generateZip() {
     console.log(props.themeNameProp)
     var zip = new JSZip();
@@ -39,6 +70,12 @@ var stylecss =
 
     //style.scss
     zip.file("style.css", stylecss)
+    
+    //footer.php
+    zip.file("footer.php", footerphp)
+
+    //header.php
+    zip.file("header.php", headerphp)
 
     //library
     var folder1 = zip.folder("library");
