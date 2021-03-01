@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className={style.heroContainer}>
       <h1>generateTheme<span className={style.pink}>( )</span></h1>
-      <input type="text" onChange={themeNameListener}></input>
+      <input type="text" placeholder={"Enter theme name"} autoComplete="none" onChange={themeNameListener}></input>
       <DownloadButton themeNameProp={themeName}/>
     </div>
   );
