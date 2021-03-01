@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div className={style.heroContainer}>
-      <h1>Home</h1>
+      <h1>generateTheme<span className={style.pink}>( )</span></h1>
       <button onClick={()=> generateZip()}>Generate Theme</button>
     </div>
   );
