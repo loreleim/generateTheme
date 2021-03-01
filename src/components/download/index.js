@@ -21,7 +21,6 @@ export default function DownloadButton(props) {
 <body <?php body_class(); ?>
 `
 
-
   var indexphp =
 `<?php get_header(); ?>
 	
@@ -65,6 +64,7 @@ export default function DownloadButton(props) {
     console.log(props.themeNameProp)
     var zip = new JSZip();
 
+    /*MAIN DIRECTORY*/
     //index.php
     zip.file("index.php", indexphp);
 
@@ -76,6 +76,8 @@ export default function DownloadButton(props) {
 
     //header.php
     zip.file("header.php", headerphp)
+
+    /*FOLDER ONE*/
 
     //library
     var folder1 = zip.folder("library");

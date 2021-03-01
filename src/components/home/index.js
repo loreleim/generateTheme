@@ -5,7 +5,7 @@ import React, { useState } from "react";
 export default function Home() {
 
   //this is the themeName listener, that changes on input keyup
-  const [themeName, setThemeName] = useState("default");
+  const [themeName, setThemeName] = useState("generateTheme-default");
 
   function themeNameListener(e) {
     setThemeName(e.target.value);
