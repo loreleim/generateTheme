@@ -1,10 +1,49 @@
 @import "./variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://use.typekit.net/azh6app.css");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+p, label {
+  color: $black;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
 
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */

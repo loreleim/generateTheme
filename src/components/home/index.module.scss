@@ -1,0 +1,82 @@
+@import "../../styles/variables.scss";
+
+.heroContainer {
+  background-color: $black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+
+  & h1 {
+    color: $yellow;
+    font-size: 1.8rem;
+  }
+
+  & label {
+    color: $lightBlue;
+    position: relative;
+  }
+
+  & input {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 3rem;
+    outline: none;
+    border: 3px solid $lightBlue;
+    color: $lightBlue;
+    background-color: transparent;
+    text-align: center;
+
+    &:focus, :valid {
+      outline: none;
+      transition: 0.3s ease-in-out all;
+      border: 3px solid $darkBlue;
+    }
+
+    &::placeholder {
+      color: $lightBlue;
+    }
+
+    &:focus::placeholder {
+      color: $darkBlue;
+      transition: 0.3s ease-in-out all;
+    }
+  }
+}
+
+.heroText {
+  text-align: center;
+}
+
+.pink {
+  color: $pink;
+}
+
+
+/*Media Queries*/
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .heroText {
+    width: 30vw;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
+
+/* For TV Screens & Projectors */
+@media (min-width: 2000px) {
+}

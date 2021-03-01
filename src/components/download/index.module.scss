@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+.downloadButton {
+    border-radius: 3rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: $darkBlue;
+    border: 4px solid $darkBlue;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        border: 4px solid $orange;
+        transition: 0.3s ease-in-out all;
+    }
+}
+
+
+/*Media Queries*/
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
+
+/* For TV Screens & Projectors */
+@media (min-width: 2000px) {
+}
