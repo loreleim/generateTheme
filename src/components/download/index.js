@@ -7,7 +7,7 @@ export default function DownloadButton(props) {
 
   var headerphp =
 `<!DOCTYPE html>
-<html <?php language_attributes(); ?>
+<html <?php language_attributes(); ?>>
 
 <head>
     <?php /* Meta Tags */ ?>    
