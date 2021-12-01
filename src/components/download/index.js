@@ -11,7 +11,7 @@ export default function DownloadButton(props) {
 
 <head>
     <?php /* Meta Tags */ ?>    
-    <?php include(locate_template('library/components/ol-metadata/ol-metadata.php')); ?>
+    <?php include(locate_template('library/components/metadata/metadata.php')); ?>
    
     <?php /* Header Output Hook */ ?> 
     <?php wp_head(); ?>
@@ -37,7 +37,7 @@ export default function DownloadButton(props) {
 * Theme Name: ${props.themeNameProp}
 * Author: ${props.authorProp}
 * Description: ${props.descriptionProp}
-* Version 0.1.0
+* Version: 0.1.0
 */
 
 * {
